@@ -1,0 +1,19 @@
+<Project Sdk="h5.Target/23.11.43676">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>7.2</LangVersion>
+        <AssemblyName>H5TypeScriptIssue</AssemblyName>
+        <RootNamespace>H5TypeScriptIssue</RootNamespace>
+    </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<DefineConstants>$(DefineConstants)</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DefineConstants>$(DefineConstants)</DefineConstants>
+	</PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="h5" Version="23.11.43678" />
+        <PackageReference Include="h5.core" Version="23.11.43674" />
+        <PackageReference Include="h5.Newtonsoft.Json" Version="24.2.45748" />
+    </ItemGroup>
+</Project>
